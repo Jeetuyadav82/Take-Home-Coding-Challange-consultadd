@@ -48,7 +48,7 @@ CurrentOrientation = 0
 route_array = [[0 for x in range(300)] for y in range(300)] 
 route_array[0][0] = 1
 
-print("provide the input if form R2, L4, R5.......etc")
+print("provide the input in format R2, L4, R5.......etc")
 
 inputArray = input().split(", ")
 
@@ -56,4 +56,4 @@ for instruction in inputArray:
 	CurrentOrientation = To_decide_Turn(CurrentOrientation, instruction[0][0])
 	CurrentX, CurrentY = To_Move_Ver_or_Hor(CurrentX, CurrentY, CurrentOrientation, int(instruction[1:]), route_array)
 
-print("Distance from start_point to end_point:", abs(CurrentX) + abs(CurrentY))
+print("Easter Bunny is now", abs(CurrentX) + abs(CurrentY),"block away.")
